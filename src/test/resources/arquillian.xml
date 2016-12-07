@@ -32,7 +32,7 @@
         </configuration>
     </container>
     
-    <container qualifier="wildfly-10-managed" >
+    <container qualifier="wildfly-10-managed" default="true">
         <configuration>
             <property name="jbossHome">target/wildfly-10.0.0.Final</property>
             <property name="modulePath">target/wildfly-10.0.0.Final/modules/system/layers/base</property>
@@ -41,7 +41,7 @@
         </configuration>
     </container>
     
-    <container qualifier="wildfly-10-managed-local" default="true">
+    <container qualifier="wildfly-10-managed-local" >
         <configuration>
             <property name="jbossHome">C:\jboss\wildfly-10.0.0.Final\wildfly-10.0.0.Final</property>
             <property name="modulePath">C:\jboss\wildfly-10.0.0.Final\wildfly-10.0.0.Final\modules\system\layers\base</property>
