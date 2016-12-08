@@ -32,7 +32,7 @@
         </configuration>
     </container>
     
-    <container qualifier="wildfly-10-managed" default="true">
+    <container qualifier="wildfly-10-managed" >
         <configuration>
             <property name="jbossHome">target/wildfly-10.0.0.Final</property>
             <property name="modulePath">target/wildfly-10.0.0.Final/modules/system/layers/base</property>
@@ -50,12 +50,13 @@
         </configuration>
     </container>
     
-    <container qualifier="jbossas-remote">
+    <container qualifier="wildfly-10-remote" default="true">
         <configuration>
             <property name="managementAddress">127.0.0.1</property>
             <property name="managementPort">9990</property>
             <property name="username">admin</property>
             <property name="password">admin</property>
+            <property name="outputToConsole">true</property>
         </configuration>
     </container>
 
